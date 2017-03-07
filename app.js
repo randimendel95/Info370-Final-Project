@@ -7,5 +7,5 @@ function getUserInput() {
     var firstgen_pct = document.getElementById("firstgen_pct").value;
     var fam_income = document.getElementById("fam_income").value;
 
-    alert(sector, fin_indep, pre_degree, firstgen_pct, fam_income);
+    alert(sector + " " + fin_indep + " " + pre_degree + " " + firstgen_pct + " " + fam_income);
 }
