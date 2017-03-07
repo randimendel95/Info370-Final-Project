@@ -1,10 +1,12 @@
 <html>
 
+
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
 
 	<link rel="stylesheet" href="style.css">
 
@@ -17,30 +19,42 @@
 		<div class= "container">
 			<h3>User Input here:</h3>
 			<div class ="row">
-				<div class="col-lg-3">
-					<div class="input-group">
-			  			<span class="input-group-addon" id="basic-addon1"></span>
-			  			<input type="text" class="form-control" placeholder="input here" aria-describedby="">
+				<div class="col-lg-4">
+					<div class="input-group">University Sector:
+						<select>
+						  <option id="sector">Public</option>
+						  <option id="sector">Private, nonprofit</option>
+						  <option id="sector">Private, profit</option>
+						</select>
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-4">
 					<div class="input-group">
-			  			<span class="input-group-addon" id="basic-addon1"></span>
-			  			<input type="text" class="form-control" placeholder="input here" aria-describedby="">
+			  			<span class="input-group-addon" id="basic-addon1">Financial Independence Rate:</span>
+			  			<input type="text" class="form-control" placeholder="input here" aria-describedby="" id = "fin_indep">
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-4">
 					<div class="input-group">
-			  			<span class="input-group-addon" id="basic-addon1"></span>
-			  			<input type="text" class="form-control" placeholder="input here" aria-describedby="">
+			  			<span class="input-group-addon" id="basic-addon1">Predominent Degree:</span>
+			  			<input type="text" class="form-control" placeholder="input here" aria-describedby="" id = "pre_degree">
 					</div>
 				</div>
-				<div class="col-lg-3">
+				<div class="col-lg-4">
 					<div class="input-group">
-			  			<span class="input-group-addon" id="basic-addon1"></span>
-			  			<input type="text" class="form-control" placeholder="input here" aria-describedby="">
+			  			<span class="input-group-addon" id="basic-addon1">First Generation Percentage:</span>
+			  			<input type="text" class="form-control" placeholder="input here" aria-describedby="" id = "firstgen_pct">
 					</div>
 				</div>
+				<div class="col-lg-4">
+					<div class="input-group">
+			  			<span class="input-group-addon" id="basic-addon1">Average Family Income:</span>
+			  			<input type="text" class="form-control" placeholder="input here" aria-describedby="" id = "fam_income">
+					</div>
+				</div>
+			</div>
+			<div class="btn-group" role="group" aria-label="...">
+			  <button type="button" class="btn btn-default">See Results</button>
 			</div>
 		</div>
 
@@ -51,7 +65,7 @@
 
 	</body>
 
-		<!-- Latest compiled and minified JavaScript -->
+	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </html>
