@@ -11772,7 +11772,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>3.3% of all incidents reported to the National Incident-Based Reporting System (NIBRS) took place on a college campus. A university is an important space where students are given the opportunity for higher knowledge and learning, along with transitioning to a more independent state. However, crime at such institutions has been an issue for students and parents alike, along with the institution officials, who work to mitigate such crimes. Campus related crime is an issue that universities invest significant amounts of money to prevent, however it is generally a topic that is only reported as a historical, after-the-fact statistic. Being able to use demographics of a university as a predictor of criminal offenses rather than historical records could help to reduce crime rates early on. Our team wanted to explore how we could use different school demographics to predict criminial incidents rate. We hope to provide resource for future students to predict what crime rates might be for a particular univeristy, which may alter their decision of where to attend.</p>
+<h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">&#182;</a></h2><p>Of all criminal incidents reported to the National Incident-Based Reporting System (NIBRS), 3.3% took place on a university campus. A university is an important space where students are given the opportunity for higher knowledge and learning as they transition to a more independent state. However, crime at such institutions is an issue for students and parents alike, as well as officials who work to mitigate such crimes. Universities invest significant amounts of money in preventing crime, but data relevant to campus crime is often only reported as a historical, after-the-fact statistics. Being able to use data about universities as a predictor of criminal offenses could help university officials develop plans to reduce crime rates. Through our study we hope to provide officials with this data, and also offer it to students as it may impact their decision on which university to attend.</p>
 
 </div>
 </div>
@@ -11911,7 +11911,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Note that, sector and control are both representations of type of sector for an insitutition. Control encoded the sector where 1 represents Public universities, 2 represents private non-rofit universities and 3 for private for-profit universities.</p>
+<p>Note that, sector and control are both representations of type of sector for an insitutition. Control encoded the sector where 1 represents public universities, 2 represents private non-rofit universities and 3 for private for-profit universities.</p>
 
 </div>
 </div>
@@ -11930,7 +11930,7 @@ div#notebook {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>This is a summary of our outcome variable <strong>crime_rate</strong>. As shown, 75% of crime_rate is less than 2 crime incidents per 1,000 students. However the maximum crime rate is over 100 times bigger than the majority, therefore creating data that is heavily skewed to the left.</p>
+<p>This is a summary of our outcome variable <strong>crime_rate</strong>. As shown, 75% of universities have a crime_rate of less than 2 incidents per 1,000 students. However the maximum crime rate is over 100 times larger than the 75th percentile,  creating data that is heavily skewed to the left.</p>
 
 </div>
 </div>
@@ -11968,7 +11968,7 @@ Name: crime_rate, dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>The factors we chose to include were the ones that we found to have a significant impact on our model. One primary factor that influenced our variable choice was availability as some features contained a lot of null values. Another influencing factor was we performed exploratory data analysis and noticed a high correlation between certain variables and crime rate. We then narrowed them further by selecting which variables followed our goals for the project, this left us with the below variables.</p>
+<p>The factors we chose to include were the ones that we found to have a significant impact on our model. One primary factor that influenced our variable choice was availability, as some features contained a lot of null values. Another influencing factor was an exploratory data analysis where we noticed a high correlation between certain variables and crime rate. We then narrowed them further by selecting which variables followed our goals for the project, this left us with the below variables.</p>
 <p>The table below shows variables we used in our research.</p>
 
 </div>
@@ -12074,7 +12074,7 @@ Name: crime_rate, dtype: float64</pre>
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>In our exploratory data analysis we delve into the distribution of our chosen variables. Below is a graph of the distribution of one of these variables. As you can see there are a high number of occurrences that fall in the zero category and then there is a very slight tail to the right. This showed us that the data follows a poisson distribution which allowed us to better fit our model based on this major trend. We also noticed in this dataset that there were a few major outliers that had a very large number of crimes and a low number of students which skewed our data. We removed these outliers from our training set as we did not think it represented the trends of the data overall.</p>
+<p>In our exploratory data analysis we delve into the distribution of our chosen variables. Below is a graph of the distribution of one of these variables. As you can see there are a high number of occurrences that fall in the zero category and then there is a very slight tail to the right. This showed us that the data follows a poisson distribution. We also noticed in this dataset that there were a few major outliers that had a very large number of crimes and a low number of students which skewed our data. We removed these outliers from our training set as we did not think it represented the trends of the data overall.</p>
 
 </div>
 </div>
@@ -12506,7 +12506,7 @@ iDDkAQAAAEAQYcgDAAAAgCDy/wEwTmgS9NzRfwAAAABJRU5ErkJggg==
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>We also encountered some limitations of our dataset, as seen in the graph below there were a large amount of private schools compared to other types of universities.</p>
+<p>We also encountered some limitations in our dataset. As seen in the graph below there were a large number of private schools compared to other types of universities.</p>
 
 </div>
 </div>
@@ -12875,7 +12875,7 @@ IiIiplIYEREREVP9DwnY/JTag/uZAAAAAElFTkSuQmCC
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Here is a visualization the demonstrates some of the outliers we encountered as crime rate is not always proportional to population at the school. It also demonstrates how having the higher number of private schools makes the private schools appear to have higher crime rates and could slightly skew our results.</p>
+<p>Below is a visualization that demonstrates some of the outliers we encountered. It also demonstrates how having the higher number of private schools makes the private schools appear to have higher crime rates and could slightly skew our results.</p>
 
 </div>
 </div>
@@ -15360,7 +15360,8 @@ AAAASUVORK5CYII=
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h2><p>Our dataset had some inherent limitations. First, our dataset was relatively small (~5,000 rows) for the type of predicting we are trying to do. Ideally we would want more data in order to make our model stronger and more accurate. Additionally, we only analyze five different features to predict our model. Therefore, we acknowledge that the predictions we are making may not be accurate as there are many other factors that come into play.</p>
+<h2 id="Limitations">Limitations<a class="anchor-link" href="#Limitations">&#182;</a></h2><p>Our dataset had some inherent limitations, the greatest of which is the fact that it relies on reports from different sources. In some cases crime incident reports may have come from schools self-reporting, while in others they may have come from local law enforcement. In some instances schools did not report data. Additionally, schools are located in different states and local jurisdictions which may have different definitions of criminal offences. For instance, substances which may result in a drug-related criminal arrest at universities located in one state may be legal in others.</p>
+<p>Our dataset was also relatively small (~5,000 rows) for the type of predicting we aimed to do. We may have been able to predict more accurately with additional data. Lastly, we only analyzed five different features to predict crime rate. We therefore acknowledge that the predictions we made may not be accurate as there are many other factors that come into play.</p>
 
 </div>
 </div>
